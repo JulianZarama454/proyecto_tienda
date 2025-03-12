@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Just Do It</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <script src="logica/scripts.js" defer></script>
+
+ 
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" width="140px" >
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#">Hombre</a>
+                    <div class="dropdown-content">
+                        <a href="#">Zapatillas</a>
+                        <a href="#">Camisetas</a>
+                        <a href="#">Pantalones</a>
+                        <a href="#">Sudaderas</a>
+                        <a href="#">Chaquetas</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Shorts</a>
+                        <a href="#">Accesorios</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Mujer</a>
+                    <div class="dropdown-content">
+                        <a href="#">Zapatillas</a>
+                        <a href="#">Tops y Camisetas</a>
+                        <a href="#">Leggings</a>
+                        <a href="#">Sudaderas</a>
+                        <a href="#">Chaquetas</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Shorts</a>
+                        <a href="#">Vestidos</a>
+                        <a href="#">Accesorios</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Niños</a>
+                    <div class="dropdown-content">
+                        <a href="#">Niños (8-16)</a>
+                        <a href="#">Niñas (8-16)</a>
+                        <a href="#">Infantil (1-7)</a>
+                        <a href="#">Bebés (0-3)</a>
+                        <a href="#">Zapatillas</a>
+                        <a href="#">Ropa</a>
+                        <a href="#">Accesorios</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Deportes</a>
+                    <div class="dropdown-content">
+                        <a href="#">Running</a>
+                        <a href="#">Fútbol</a>
+                        <a href="#">Baloncesto</a>
+                        <a href="#">Tenis</a>
+                        <a href="#">Training</a>
+                        <a href="#">Yoga</a>
+                        <a href="#">Golf</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Colecciones</a>
+                    <div class="dropdown-content">
+                        <a href="#">Jordan</a>
+                        <a href="#">Air Force 1</a>
+                        <a href="#">Air Max</a>
+                        <a href="#">Dunk</a>
+                        <a href="#">Blazer</a>
+                        <a href="#">Pegasus</a>
+                    </div>
+                </li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+            <div class="nav-icons">
+                <span class="search-icon">🔍</span>
+                <span class="cart-icon" id="cartIcon">🛒</span>
+                <span class="user-icon">👤</span>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Carrusel -->
+    <div class="carousel">
+        <div class="carousel-inner" id="carouselInner">
+            <div class="carousel-item active">
+                <img src="" alt="CALACA CHIDA T-SHIRT">
+                <div class="carousel-content">
+                    <h1>CALACA CHIDA T-SHIRT</h1>
+                    <p>Descubre las camisas Calaca chida t-shirt con tecnología de última generación para un confort y estilo inigualables.</p>
+                    <a href="#" class="btn">Comprar ahora</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="" alt="LACTOSE TOLERANT T-SHIRT">
+                <div class="carousel-content">
+                    <h1>LACTOSE TOLERANT T-SHIRT</h1>
+                    <p>Viste como una leyenda con la nueva colección de Lactose. Rendimiento y estilo que trasciende generaciones.</p>
+                    <a href="#" class="btn">Explorar colección</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="" alt="DOCTOR T-SHIRT">
+                <div class="carousel-content">
+                    <h1>DOCTOR T-SHIRT</h1>
+                    <p>Equipamiento de Doctor diseñado para ayudarte a superar tus límites y alcanzar nuevas metas.</p>
+                    <a href="#" class="btn">Ver running</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-controls">
+            <span class="carousel-dot active" data-index="0"></span>
+            <span class="carousel-dot" data-index="1"></span>
+            <span class="carousel-dot" data-index="2"></span>
+        </div>
+        
+        <div class="carousel-arrow carousel-prev">❮</div>
+        <div class="carousel-arrow carousel-next">❯</div>
+    </div>
+    
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" >
+        </div>
+        <center><h1>Catálogo de Productos</h1></center>
+        
+    </header>
+    
+    <!-- Categorías destacadas -->
+    <main class="contenedor">
+        <aside class="filtros">
+            <h2>Filtrar por</h2>
+            <label><input type="checkbox"> Camisetas</label>
+            <label><input type="checkbox"> Sudaderas</label>
+            <label><input type="checkbox"> Accesorios</label>
+            <h3>Precio</h3>
+            <label><input type="radio" name="precio"> Menos de $20</label>
+            <label><input type="radio" name="precio"> $20 - $40</label>
+            <label><input type="radio" name="precio"> Más de $40</label>
+        </aside>
+
+
+        <section class="catalogo">
+            <div class="producto">
+                <img src="images/producto1.jpg" alt="Producto 1">
+                <h2>Calaca chida t-shirt</h2>
+                <p>$20.00</p>
+                <button>Agregar al Carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="images/producto2.jpg" alt="Producto 2">
+                <h2>Lactose tolerant t-shirt</h2>
+                <p>$30.00</p>
+                <button>Agregar al Carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="images/producto3.jpg" alt="Producto 3">
+                <h2>Dogtor t-shirt</h2>
+                <p>$25.00</p>
+                <button>Agregar al Carrito</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Productos destacados</h4>
+                    <ul>
+                        <li><a href="#">Air Force 1</a></li>
+                        <li><a href="#">Air Jordan 1</a></li>
+                        <li><a href="#">Air Max</a></li>
+                        <li><a href="#">Nike Blazer</a></li>
+                        <li><a href="#">Nike React</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Colecciones</h4>
+                    <ul>
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Fútbol</a></li>
+                        <li><a href="#">Baloncesto</a></li>
+                        <li><a href="#">Entrenamiento</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Estado del pedido</a></li>
+                        <li><a href="#">Envíos y entregas</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Opciones de pago</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Acerca de Nike</h4>
+                    <ul>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Empleo</a></li>
+                        <li><a href="#">Inversores</a></li>
+                        <li><a href="#">Sostenibilidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Nike, Inc. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+   
+
+</body>
+</html>
